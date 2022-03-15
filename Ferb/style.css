@@ -1,0 +1,242 @@
+/*Configuração padrão*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Configuração padrão*/
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to top, lightblue, rgb(0, 162, 255));
+}
+#container{
+    display: flex ;
+    justify-content: center;
+}
+
+.cabeca{
+    position: absolute;
+    border: solid 4px #d69d41;
+    border-bottom: none;
+    height: 400px;
+    width: 130px;
+    margin-top: 100px;
+    background: #ffe2ca;
+}
+
+/*Cabelo esquerdo*/
+.cabelo::after{
+    content: "";
+    position: absolute;
+    background: transparent;
+    height: 40px;
+    width: 160px;
+    border-top: 30px solid rgb(63, 138, 46);
+    border-radius: 50px 40px 0 0;
+    transform: rotate( -8deg);
+    margin-left: -90px;
+    margin-top: -20px;
+}
+
+/*Cabelo esquerdo superior*/
+.cabelo>div:nth-child(1):after{
+    content: "";
+    position: absolute;
+    background: transparent;
+    height: 40px;
+    width: 110px;
+    border-top: 20px solid rgb(63, 138, 46);
+    border-radius: 50px 40px 0 0;
+    transform: rotate( 30deg);
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+/*Cabelo esquerdo inferior*/
+.cabelo>div:nth-child(2):after{
+    content: "";
+    position: absolute;
+    background: transparent;
+    height: 40px;
+    width: 70px;
+    border-top: 20px solid rgb(63, 138, 46);
+    border-radius: 50px 40px 0 0;
+    transform: rotate( 310deg);
+    margin-left: 30px;
+}
+
+/*Cabelo direito inferior*/
+.cabelo>div:nth-child(3):after{
+    content: "";
+    position: absolute;
+    background: transparent;
+    height: 40px;
+    width: 110px;
+    border-top: 20px solid rgb(63, 138, 46);
+    border-radius: 50px 40px 0 0;
+    transform: rotate( 40deg);
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+/*Cabelo superior do meio*/
+.cabelo>div:nth-child(4):after{
+    content: "";
+    position: absolute;
+    background: transparent;
+    height: 25px;
+    width: 100px;
+    border-top: 20px solid rgb(63, 138, 46);
+    border-radius: 50px 40px 0 0;
+    transform: rotate( 300deg);
+    margin-top: -60px;
+    margin-left: 25px;
+}
+
+/*Cabelo superior direito*/
+.cabelo>div:nth-child(5):after{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    border-top: 20px solid rgb(63, 138, 46);
+    border-radius: 50px 40px 0 0;
+    background:transparent;
+    margin-left: 40px;
+    margin-top: -40px;
+    transform: rotate(-22deg);
+}
+
+/*Cabelo direito do meio*/
+.cabelo>div:nth-child(6):after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    border-top: 20px solid rgb(63, 138, 46);
+    border-radius: 50px 40px 0 0;
+    background:transparent;
+    margin-left: 65px;
+    margin-top: -20px;
+    transform: rotate(10deg);
+}
+
+/*Olho esquerdo*/
+.olho::before{
+   position: absolute;
+    content: "";
+     border: solid 2px black;
+    border-radius: 100%;
+    height: 120px;
+    width: 100px;
+    margin-top: 40px;
+    margin-left: -60px;
+    background: white;
+}
+
+/*Iris esquerda*/
+.iris::before{
+    content: "";
+    position: absolute;
+    border: solid 1px black;
+    border-radius: 100%;
+    background:rgb(57, 55, 189);
+    width: 15px;
+    height: 20px;
+    margin-top: 110px;
+    transform: rotate(18deg);
+}
+
+/*Pupila esquerda*/
+.pupila::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 9px;
+    border-radius: 100%;
+    background: rgb(255, 255, 255);
+    margin-top: 111px;
+    margin-left: 2px;
+    border: solid 1px black;
+}
+
+/*Globo ocular direito*/
+.olho2::after{
+    position: absolute;
+    content: "";
+     border: solid 2px black;
+    border-radius: 100%;
+    height: 90px;
+    width: 80px;
+    margin-top: 80px;
+    margin-left: 20px;
+    background: white;
+}
+
+/*Iris direita*/
+.iris2::after{
+    content: "";
+    position: absolute;
+    border: solid 1px black;
+    border-radius: 100%;
+    background: rgb(57, 55, 189);
+    width: 12px;
+    height: 15px;
+    margin-left: 60px;
+    margin-top: 120px;
+    transform: rotate(15deg);
+}
+
+/*luz branca da iris direita*/
+.pupila2::after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 6px;
+    border-radius: 100%;
+    background: rgb(255, 255, 255);
+    margin-top: 120px;
+    margin-left: 63px;
+    border: solid 1px black;
+}
+
+/*Criado todo o nariz, pseudoelemento after para ficar em cima do olho esquerdo*/
+.nariz::after{
+    content: "";
+    position: absolute;
+    border: solid 4px #d69d41;
+    border-right: none;
+    width: 130px;
+    height: 120px;
+    margin-top: 150px;
+    margin-left: -90px;
+    border-radius: 30px 0px 0px 30px;
+    background: #ffe2ca;
+   
+}
+
+.orelha{
+    border: solid 4px #d69d41;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border-left: none;
+    margin-left: 120px;
+    margin-top: 170px;
+    background: #ffe2ca;
+}
+
+.boca{
+    content: "";
+    position: absolute;
+    border: solid 4px #d69d41;
+    width: 25px;
+    height: 38px;
+    border-top: none;
+    border-right: none;
+    margin-top: 100px;
+    margin-left: -13px;
+    transform: rotate(25deg);
+    background: #ffe2ca;
+}
